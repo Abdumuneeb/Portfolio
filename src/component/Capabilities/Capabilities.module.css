@@ -1,0 +1,98 @@
+.Wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin:0 auto;
+    flex-wrap: wrap;
+
+
+}
+.cardWrapper{
+max-width: 33%;
+margin-bottom: 174px;
+margin-right: 90px;
+
+}
+.contentWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contentWrap h1{
+margin-top: 95px;
+margin-bottom: 81px;
+font-size: 60px;
+position: relative;
+
+}
+.contentWrap h1::after{
+    height: 2px;
+    width: 300px;
+    position: absolute;
+    color: red;
+    top: 10%;
+    left: 50%;
+}
+
+.contentWrap p{
+    line-height: 55px;
+    font-size: 30px;
+    max-width: 67%;
+    text-align: center;
+    margin-bottom: 230px;
+}
+.redLine{
+    background-color: #FF0513;
+    position: absolute;
+    height: 2px;
+    top: 35%;
+    width: 345px;
+}
+@media screen and (max-width:1600px) {
+    .container{
+        max-width: 1400px;
+    
+}
+.contentWrap h1{
+    margin-bottom: 65px;
+    font-size: 50px;
+}
+.contentWrap p{
+    font-size: 25px;
+}
+.contentWrap p{
+    margin-bottom: 50px;
+}
+.cardWrapper{
+    margin-bottom: 100px;
+}
+.redLine{
+    margin-top: 50px;
+}
+    
+}
+
+@media screen and (max-width:480px) {
+    .contentWrap{
+        margin: 0 auto;
+    }
+   .Wrapper.cardWrapper{
+       width: 318px;
+
+   }
+   .contentWrap h1{
+       font-size: 50px;
+       margin-bottom: 70px;
+   }
+   .contentWrap p{
+       max-width: 90%;
+       line-height: 45px;
+   }
+   .redLine{
+       margin-top: 25px;
+   }
+}

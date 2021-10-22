@@ -1,0 +1,125 @@
+.container{
+    max-width: 1750px;
+    margin: 0 auto;
+}
+.contetnWrapper{
+    margin-top: 210px;
+}
+.contetnWrapper h1{
+font-size: 150px;
+max-width: 50%;
+line-height: 156px;
+font-weight: bold;
+}
+.contetnWrapper h4{
+    font-size: 41px;
+    font-weight: lighter;
+    color: white;
+}
+h3{
+    font-size: 26px;
+    color: white;
+    line-height: 36px;
+}
+span{
+    color:  #FF0513;
+}
+.iconWrap h5{
+    font-size: 30px;
+    color: white;
+    line-height: 35px;
+    margin-top: 50px;
+}
+.flexWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.iconWrap .flexWrap{
+    display: flex;
+    gap:30px;
+}
+.iconWrap .actionBtn{
+    border-radius: 60px;
+    width: 270px;
+    height: 95px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 70px;
+    margin-left: 26px;
+    font-size: 30px;
+}
+.iconWrap .actionBtn:hover{
+    background-color:#FF0513 ;
+    border: none;
+}
+.iconWrap .actionBtn:nth-child(3){
+    margin-left: 0px;
+}
+.flexWrap img{
+    margin-top: 20px;
+    height: 35px;
+    
+}
+.wrapper{
+    z-index: 2;
+}
+@media screen and (max-width:1600px) {
+    .container{
+        max-width: 1400px;
+    }
+    .contetnWrapper{
+        width: 150%;
+    }
+    .contetnWrapper h1{
+        font-size: 100px;
+        line-height: 120px;
+        margin-bottom: 40px;
+    }
+    .flexWrap img{
+        height: 20px;
+    }
+    .iconWrap .actionBtn{
+        width: 200px;
+        height: 74px;
+    }
+    .HeroImageWrap img{
+        max-width: 98%;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .flexWrapper {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .contetnWrapper{
+        margin-top: 100px;
+    }
+    .contetnWrapper h4{
+        font-size: 20px;
+    }
+    .contetnWrapper h1{
+            font-size: 50px;
+            max-width: 40%;
+            line-height: 60px;
+    }
+    .contetnWrapper h3{
+        font-size: 25px;
+        max-width: 60%;
+        
+    }
+    .iconWrap  h5{
+        font-size: 25px;
+    }
+    .iconWrap .flexWrap img{
+       max-width: 40%;
+       margin-right: 5px;
+    }
+    .iconWrap .actionBtn {
+        padding: 10px;
+        font-size: 20px;
+        height: 50px;
+    }
+    
+}

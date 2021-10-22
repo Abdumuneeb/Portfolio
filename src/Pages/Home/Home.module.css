@@ -1,0 +1,52 @@
+.section{
+    background-color: #0E0C38;
+}
+.wrapper{
+    position: relative;
+}
+.squareBg{
+    position: absolute;
+    top:0px;
+    left: 28%;
+}
+.circleBg{
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: -12%;
+}
+.rightSquareBg{
+    position: absolute;
+    right: 0;
+    top:9%;
+}
+
+@media screen and  (max-width:1600px) {
+    .squareBg{
+        max-width: 27%;
+    }
+    .circleBg {
+        top: 2%;
+
+    }
+    .squareBg img{
+        max-width: 70%;
+        left: 20%;
+    }
+    .rightSquareBg{
+        top :8%;
+    }
+    .rightSquareBg img {
+        height: 230px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .circleBg{
+        max-width: 100%;
+    }
+    .circleBg img{
+        max-width:70% ;
+    }
+    
+}

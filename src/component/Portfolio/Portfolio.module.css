@@ -1,0 +1,86 @@
+.portfolio {
+  width: 100%;
+  background-color: #040221;
+  padding: 80px 30px;
+}
+
+.portfolio .portfolio_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.portfolio_wrapper .portfolio_cards_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.portfolio_tabs h3 {
+  color: #ffffff;
+  text-align: left;
+}
+
+.portfolio_wrapper .heading_wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.heading_wrapper h3{
+  position: relative;
+  font-size: 50px;
+}
+.heading_wrapper h3::after{
+
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  content: "";
+  background-color: red;
+  top: 25px;
+  left:220px;
+
+}
+.listWrap ul li:hover{
+color: red;
+background-color: black;
+}
+.listWrap ul li{
+color: white;
+font-size: 30px;
+list-style-type: none;
+margin-left: 30px;
+cursor: pointer;
+}
+.listWrap ul li:first-child{
+  margin-left: 0;
+}
+.cardWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 30%;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:1600px) {
+    .container{
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+   
+}
+@media screen and (max-width:480px) {
+  .heading_wrapper h3{
+    font-size: 50px;
+  }
+  .listWrap ul li{
+    font-size: 20px;
+  }
+ .portfolio {
+   padding: 80px 20px;
+ }
+  
+}
+

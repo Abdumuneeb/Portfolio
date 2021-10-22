@@ -1,0 +1,138 @@
+.section{
+    position: relative;
+}
+.contentWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contentWrap {
+    margin-top: 234px;
+
+}
+.contentWrap h1{
+    font-size: 60px;
+    font-weight: 700;
+    max-width: 35%;
+    text-align: center;
+}
+.contentWrap p{
+    font-size: 20px;
+    line-height: 55px;
+    max-width: 38%;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.formWrapper form{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .formWrapper form input [type="text"]{
+    width: 50%;
+} */
+form .inputWrap{
+max-width: 100%;
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 50px;
+/* justify-content: center; */
+
+}
+form .inputWrap [type="text"]{
+    width: 594px;
+    height: 90px;
+    font-size: 25px;
+    padding: 25px;
+}
+form .inputWrap [type="number"]{
+    width: 594px;
+    font-size: 25px;
+    height: 90px;
+    padding: 25px;
+}
+form .inputWrap textarea{
+
+    width: 85%;
+    font-size: 25px;
+    min-height: 205px;
+    padding: 25px;
+}
+.actionBtn{
+    border-radius: 60px;
+    width: 270px;
+    height: 95px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 70px;
+    margin-left: 26px;
+    font-size: 30px;
+}
+.actionBtn:hover{
+    background-color:#FF0513 ;
+    border: none;
+}
+/* .wrapper{
+    position: relative;
+} */
+.redLine{
+    background-color: #FF0513;
+    position: absolute;
+    height: 187px;
+    top: -231px;
+    left: 50%;
+    width: 2px;
+}
+@media screen and (max-width:1600px) {
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .contentWrap h1{
+        max-width: 50%;
+    }
+    .contentWrap p{
+        max-width: 55%;
+    }
+    .redLine{
+        height: 140px;
+    }
+    .formWrapper .inputWrap input{
+        font-size: 15px ;
+        width: 450px;
+        height: 60px;
+    }
+    .formWrapper .inputWrap textarea{
+        font-size: 15px ;
+        width: 87%;
+    }
+    .inputWrap .actionBtn{
+        width: 210px;
+        height: 75px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .contentWrap h1{
+        max-width: 100%;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .contentWrap p{
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 35px;
+    }
+  .inputWrap .actionBtn {
+      height: 60px;
+      width: 200px;
+  }
+    
+}
